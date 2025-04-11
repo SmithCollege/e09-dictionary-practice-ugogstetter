@@ -12,7 +12,13 @@ def print_dictionary(dry):
 # Just add your code inside the while
 def main():
   high_scores = {}
-
+  user = "Yes"
+  while user == "Yes":
+    name = input("Name?")
+    points = input("Points?")
+    high_scores[name] = points
+    print(high_scores)
+    user = input("Type \"Yes\" to add more inputs, otherwise, type something else.")
   #TODO:
   # Create your code here. A While loop should do this:
     # 1. Asks the user for a name
